@@ -1,0 +1,9 @@
+1. Add a way to remove a book from a chapter
+
+2. Add a way to edit book details after added
+
+3. Updates css of cover, pages, etc.
+
+4. Add more features / interactivity and responsiveness
+
+5. Add local storing (stores data locally)
