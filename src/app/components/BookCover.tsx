@@ -1,4 +1,4 @@
-import { BookOpen } from "lucide-react";
+import { BookOpenText } from "lucide-react";
 
 export function BookCover() {
   return (
@@ -10,7 +10,7 @@ export function BookCover() {
       <div className="absolute bottom-3 right-3 md:bottom-4 md:right-4 w-12 h-12 md:w-16 md:h-16 border-b-2 border-r-2 border-[#d4af37]" />
 
       {/* Center content */}
-      <BookOpen className="w-16 h-16 md:w-20 md:h-20 mb-4 md:mb-6 text-[#d4af37]" />
+      <BookOpenText className="w-16 h-16 md:w-20 md:h-20 mb-4 md:mb-6 text-[#d4af37]" />
       <h1 className="text-3xl md:text-5xl font-serif mb-3 md:mb-4 text-center">
         Tracking Titles
       </h1>

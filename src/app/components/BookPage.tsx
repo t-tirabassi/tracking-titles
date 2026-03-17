@@ -34,7 +34,7 @@ export function BookPage({ book, pageNumber }: BookPageProps) {
 
       {/* Genre badge */}
       <div className="mb-5">
-        <span className="inline-block px-3 py-1 bg-[#8b4513]/10 text-[#8b4513] text-sm rounded-full">
+        <span className="inline-block px-3 py-1 bg-[#8b4513]/10 text-[#8b4513] text-base rounded-full">
           {book.genre}
         </span>
       </div>
@@ -44,7 +44,7 @@ export function BookPage({ book, pageNumber }: BookPageProps) {
         {[1, 2, 3, 4, 5].map((star) => (
           <Star
             key={star}
-            className={`w-5 h-5 ${
+            className={`w-7 h-7 ${
               star <= book.rating
                 ? "fill-[#d4af37] text-[#d4af37]"
                 : "text-[#c4b5a0]"

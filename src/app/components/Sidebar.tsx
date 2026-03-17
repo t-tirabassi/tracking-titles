@@ -2,7 +2,7 @@ import { Link, useLocation } from "react-router";
 import { GENRES } from "../types/book";
 import { useBooks } from "../contexts/BookContext";
 import { AddBookDialog } from "./AddBookDialog";
-import { BookOpen, Home, Menu, X } from "lucide-react";
+import { BookOpenText, Home, Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "./ui/button";
 
@@ -23,7 +23,7 @@ export function Sidebar() {
       <div className="p-4 md:p-6 border-b border-[#8b7355]">
         <div className="flex items-center justify-between mb-4">
           <div className="flex items-center gap-2">
-            <BookOpen className="w-6 h-6 md:w-8 md:h-8 text-[#d4af37]" />
+            <BookOpenText className="w-6 h-6 md:w-8 md:h-8 text-[#d4af37]" />
             <div>
               <h2 className="text-lg md:text-xl font-serif text-[#f5deb3]">Tracking Titles</h2>
               <p className="text-xs md:text-sm text-[#c4b5a0]">{books.length} books</p>

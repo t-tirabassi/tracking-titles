@@ -1,4 +1,4 @@
-1. Add a way to remove a book from a chapter
+1. Add a way to remove a book from a chapter / remove a whole chapter
 
 2. Add a way to edit book details after added
 
@@ -11,3 +11,7 @@
 6. Change it so clicking through the last page of a chapter brings you to the next chapter
 
 7. Implement way to add new genres, those added should display above the Other chapter in the sidebar
+
+8. Add way for users to favorite books (bookmarked by clicking toggle lucide-react Bookmark icon), gets copied over to Favorites tab
+
+9. Change it so genre badge colors are differenty, also make it so genre badge color can be chosen when adding new genre
