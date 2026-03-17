@@ -1,12 +1,14 @@
 import { Book } from "../types/book";
-import { Star } from "lucide-react";
+import { Star, Trash2 } from "lucide-react";
+import { Button } from "./ui/button";
 
 interface BookPageProps {
   book: Book;
   pageNumber: number;
+  onDelete ?: () => void;
 }
 
-export function BookPage({ book, pageNumber }: BookPageProps) {
+export function BookPage({ book, pageNumber, onDelete }: BookPageProps) {
   return (
     <div
       className="h-full flex flex-col p-6 md:p-8 bg-[#faf8f3]"
@@ -23,6 +25,25 @@ export function BookPage({ book, pageNumber }: BookPageProps) {
       <div className="text-right text-sm text-[#8b7355] mb-4 font-serif">
         {pageNumber}
       </div>
+
+      {/* Delete a book */}
+      { onDelete && (
+        <div className = "absolute top-4 left-4 md:top-6 md right-6">
+          <Button variant = "ghost" size = "sm" onClick = {(e) => {
+             e.stopPropagation();
+             if (window.confirm(
+              `Are you sure you want to remove "${book.title}" from your journal?`
+            ))
+              { 
+                onDelete(); 
+              }
+            }}
+            className = "text-[#8b4513] hover:text-red-600 hover:bg-red-50"
+             >
+              <Trash2 className = "w-4 h-4" />
+             </Button>
+        </div>
+      )}
 
       {/* Book title and author */}
       <div className="mb-5 mt-4">

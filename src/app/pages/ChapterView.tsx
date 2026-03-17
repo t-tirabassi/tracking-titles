@@ -9,7 +9,7 @@ import { Button } from "../components/ui/button";
 
 export function ChapterView() {
   const { genre } = useParams<{ genre: string }>();
-  const { books } = useBooks();
+  const { books, removeBook } = useBooks();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [direction, setDirection] = useState(0);
 
@@ -32,6 +32,17 @@ export function ChapterView() {
 
   const canGoPrevious = currentIndex > 0;
   const canGoNext = currentIndex < genreBooks.length - 1;
+
+  // Handles book deletion
+  const handleDeleteBook = (bookId: string) => {
+    removeBook(bookId);
+    if (currentIndex >= genreBooks.length - 1 && currentIndex > 0) {
+      setCurrentIndex(currentIndex - 1);
+    }
+    else if (genreBooks.length == 1) {
+      setCurrentIndex(0);
+    }
+  };
 
   const pageVariants = {
     enter: (direction: number) => ({
@@ -92,6 +103,7 @@ export function ChapterView() {
                 <BookPage
                   book={genreBooks[currentIndex]}
                   pageNumber={currentIndex + 1}
+                  onDelete={() => handleDeleteBook(genreBooks[currentIndex].id)}
                 />
               </motion.div>
             </AnimatePresence>

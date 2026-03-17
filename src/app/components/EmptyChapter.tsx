@@ -12,9 +12,9 @@ export function EmptyChapter({ genre }: EmptyChapterProps) {
         Chapter Empty
       </h3>
       <p className="text-sm md:text-base text-[#8b7355] text-center max-w-md font-serif px-4">
-        You haven't added any {genre} books yet.
+        No {genre} books added yet.
         <br />
-        Click "Add New Book" to start filling this chapter!
+        Click "Add New Book" to start adding some!
       </p>
     </div>
   );
