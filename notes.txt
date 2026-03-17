@@ -1,1 +1,3 @@
-run npm dev to start once in /tracking-titles folder
+do npm run dev to start once in /tracking-titles folder
+
+*think npm run build will start up build version, test first*
