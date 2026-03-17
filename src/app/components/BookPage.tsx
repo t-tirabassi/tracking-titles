@@ -1,6 +1,8 @@
 import { Book } from "../types/book";
 import { Star, Trash2 } from "lucide-react";
 import { Button } from "./ui/button";
+import { AlertDialog, AlertDialogTrigger, AlertDialogContent, AlertDialogHeader, AlertDialogTitle, 
+AlertDialogDescription, AlertDialogFooter, AlertDialogCancel, AlertDialogAction } from "./ui/alert-dialog";
 
 interface BookPageProps {
   book: Book;
@@ -27,21 +29,36 @@ export function BookPage({ book, pageNumber, onDelete }: BookPageProps) {
       </div>
 
       {/* Delete a book */}
-      { onDelete && (
-        <div className = "absolute top-4 left-4 md:top-6 md right-6">
-          <Button variant = "ghost" size = "sm" onClick = {(e) => {
-             e.stopPropagation();
-             if (window.confirm(
-              `Are you sure you want to remove "${book.title}" from your journal?`
-            ))
-              { 
-                onDelete(); 
-              }
-            }}
-            className = "text-[#8b4513] hover:text-red-600 hover:bg-red-50"
-             >
-              <Trash2 className = "w-4 h-4" />
-             </Button>
+      {onDelete && (
+        <div className="absolute top-4 left-4 md:top-6 md:right-6">
+          <AlertDialog>
+            <AlertDialogTrigger asChild>
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={(e) => e.stopPropagation()}
+                className="text-[#8b4513] hover:text-red-600 hover:bg-red-50"
+              >
+                <Trash2 className="w-4 h-4" />
+              </Button>
+            </AlertDialogTrigger>
+
+            <AlertDialogContent>
+              <AlertDialogHeader>
+                <AlertDialogTitle>Confirm Entry Deletion</AlertDialogTitle>
+                <AlertDialogDescription>
+                  Delete "{book.title}" from the "{book.genre}" chapter?
+                </AlertDialogDescription>
+              </AlertDialogHeader>
+
+              <AlertDialogFooter>
+                <AlertDialogCancel>Cancel</AlertDialogCancel>
+                <AlertDialogAction onClick={onDelete}>
+                  Delete
+                </AlertDialogAction>
+              </AlertDialogFooter>
+            </AlertDialogContent>
+          </AlertDialog>
         </div>
       )}
 
@@ -92,7 +109,7 @@ export function BookPage({ book, pageNumber, onDelete }: BookPageProps) {
       </div>
 
       {/* Date stamp */}
-      <div className="mt-4 mb-4 text-xs text-[#8b7355] text-right font-serif">
+      <div className="mt-4 mb-2 text-xs text-[#8b7355] text-right font-serif">
         Added: {new Date(book.dateAdded).toLocaleDateString()}
       </div>
     </div>
