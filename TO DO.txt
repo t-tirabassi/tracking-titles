@@ -1,4 +1,4 @@
-1. Add a way to remove a book from a chapter / remove a whole chapter
+1. Add a way to remove a whole chapter
 
 2. Add a way to edit book details after added
 

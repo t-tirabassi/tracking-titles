@@ -1,5 +1,5 @@
 import { Book } from "../types/book";
-import { Star, Trash2 } from "lucide-react";
+import { Star, BookMinus } from "lucide-react";
 import { Button } from "./ui/button";
 import { AlertDialog, AlertDialogTrigger, AlertDialogContent, AlertDialogHeader, AlertDialogTitle, 
 AlertDialogDescription, AlertDialogFooter, AlertDialogCancel, AlertDialogAction } from "./ui/alert-dialog";
@@ -30,7 +30,7 @@ export function BookPage({ book, pageNumber, onDelete }: BookPageProps) {
 
       {/* Delete a book */}
       {onDelete && (
-        <div className="absolute top-4 left-4 md:top-6 md:right-6">
+        <div className="absolute mt-1 top-4 left-4 md:top-6 md:right-6">
           <AlertDialog>
             <AlertDialogTrigger asChild>
               <Button
@@ -39,7 +39,7 @@ export function BookPage({ book, pageNumber, onDelete }: BookPageProps) {
                 onClick={(e) => e.stopPropagation()}
                 className="text-[#8b4513] hover:text-red-600 hover:bg-red-50"
               >
-                <Trash2 className="w-4 h-4" />
+                <BookMinus className="w-4 h-4" />
               </Button>
             </AlertDialogTrigger>
 
