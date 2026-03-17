@@ -9,3 +9,5 @@
 5. Add local storing (stores data locally)
 
 6. Change it so clicking through the last page of a chapter brings you to the next chapter
+
+7. Implement way to add new genres, those added should display above the Other chapter in the sidebar
