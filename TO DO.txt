@@ -19,3 +19,5 @@
 10. Fix Add New Book dialog window so that when typing a lot doesnt trail/scroll off to side opf window wraps down to next line
 
 11. Fix it so book title and author can't trail off screen also have character limit
+
+12. Add chapter divider when flipping through pages (kinda look book you're writing, have page dedicated to stating what genre chapter flipping to)
