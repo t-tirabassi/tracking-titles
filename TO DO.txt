@@ -2,7 +2,7 @@
 
 2. Add a way to edit book details after added
 
-3̶.̶ ̶U̶p̶d̶a̶t̶e̶s̶ ̶c̶s̶s̶ ̶o̶f̶ ̶c̶o̶v̶e̶r̶,̶ ̶p̶a̶g̶e̶s̶,̶ ̶e̶t̶c̶.̶ ̶(̶c̶h̶a̶n̶g̶e̶ ̶b̶r̶o̶w̶n̶ ̶a̶s̶n̶d̶ ̶y̶e̶l̶l̶o̶w̶ ̶t̶o̶ ̶a̶ ̶r̶o̶y̶a̶l̶ ̶b̶u̶r̶g̶u̶n̶d̶y̶/̶m̶a̶r̶o̶o̶n̶ ̶a̶n̶d̶ ̶g̶o̶l̶d̶)̶
+3̶.̶ ̶U̶p̶d̶a̶t̶e̶ ̶c̶s̶s̶ ̶o̶f̶ ̶c̶o̶v̶e̶r̶,̶ ̶p̶a̶g̶e̶s̶,̶ ̶e̶t̶c̶.̶ ̶(̶c̶h̶a̶n̶g̶e̶ ̶b̶r̶o̶w̶n̶ ̶a̶s̶n̶d̶ ̶y̶e̶l̶l̶o̶w̶ ̶t̶o̶ ̶a̶ ̶r̶o̶y̶a̶l̶ ̶b̶u̶r̶g̶u̶n̶d̶y̶/̶m̶a̶r̶o̶o̶n̶ ̶a̶n̶d̶ ̶g̶o̶l̶d̶)̶
 
 4. Add more features / interactivity and responsiveness (change how pages flip (especially between chapters), make it flip more like a book and not just flip one side to next)
 
