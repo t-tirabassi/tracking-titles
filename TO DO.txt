@@ -2,9 +2,9 @@
 
 2. Add a way to edit book details after added
 
-3. Updates css of cover, pages, etc.
+3. Updates css of cover, pages, etc. (change brown asnd yellow to a royal burgundy/maroon and gold)
 
-4. Add more features / interactivity and responsiveness
+4. Add more features / interactivity and responsiveness (change how pages flip, make it flip more like a book and not just flip one side to next)
 
 5. Add local storing (stores data locally)
 
