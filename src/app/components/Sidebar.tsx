@@ -20,18 +20,18 @@ export function Sidebar() {
   const sidebarContent = (
     <>
       {/* Header */}
-      <div className="p-4 md:p-6 border-b border-[#8b7355]">
+      <div className="p-4 md:p-6 border-b border-[#caa906]">
         <div className="flex items-center justify-between mb-4">
           <div className="flex items-center gap-2">
-            <BookOpenText className="w-6 h-6 md:w-8 md:h-8 text-[#d4af37]" />
+            <BookOpenText className="w-6 h-6 md:w-8 md:h-8 mb-3 mr-1 text-[#caa906]" />
             <div>
-              <h2 className="text-lg md:text-xl font-serif text-[#f5deb3]">Tracking Titles</h2>
-              <p className="text-xs md:text-sm text-[#c4b5a0]">{books.length} books</p>
+              <h2 className="text-lg md:text-xl font-serif text-[#ffffff]">Tracking Titles</h2>
+              <p className="text-xs md:text-sm text-[#ffffff]">{books.length} books</p>
             </div>
           </div>
           <button
             onClick={closeSidebar}
-            className="md:hidden text-[#f5deb3] hover:text-white"
+            className="md:hidden text-[#ffffff] hover:text-white"
           >
             <X className="w-6 h-6" />
           </button>
@@ -46,8 +46,8 @@ export function Sidebar() {
           onClick={closeSidebar}
           className={`flex items-center gap-3 px-3 md:px-4 py-3 rounded-lg mb-2 transition-colors ${
             location.pathname === "/"
-              ? "bg-[#8b4513] text-white"
-              : "text-[#c4b5a0] hover:bg-[#3d2817] hover:text-white"
+              ? "bg-[#001E57] text-[#caa906] border border-[#caa906]"
+              : "text-[#c4b5a0] hover:bg-[#0a2a5c] hover:text-white"
           }`}
         >
           <Home className="w-5 h-5" />
@@ -55,7 +55,7 @@ export function Sidebar() {
         </Link>
 
         <div className="mt-4 mb-2 px-3 md:px-4">
-          <h3 className="text-xs uppercase tracking-wider text-[#8b7355] font-serif">
+          <h3 className="text-xs uppercase tracking-wider text-[#caa906] font-serif">
             Chapters
           </h3>
         </div>
@@ -71,12 +71,12 @@ export function Sidebar() {
               onClick={closeSidebar}
               className={`flex items-center justify-between px-3 md:px-4 py-3 rounded-lg mb-1 transition-colors ${
                 isActive
-                  ? "bg-[#8b4513] text-white"
-                  : "text-[#c4b5a0] hover:bg-[#3d2817] hover:text-white"
+                  ? "bg-[#001E57] text-[#caa906] border-2 border-[#caa906]"
+                  : "text-[#c4b5a0] hover:bg-[#0a2a5c] hover:text-[#caa906]"
               }`}
             >
               <span className="font-serif text-sm md:text-base">{genre}</span>
-              <span className={`text-sm ${isActive ? "text-[#f5deb3]" : "text-[#8b7355]"}`}>
+              <span className={`text-sm ${isActive ? "text-[#ffffff]" : "text-[#caa906]"}`}>
                 {count}
               </span>
             </Link>
@@ -91,7 +91,7 @@ export function Sidebar() {
       {/* Mobile Menu Button */}
       <Button
         onClick={() => setIsOpen(true)}
-        className="md:hidden fixed top-4 left-4 z-40 bg-[#8b4513] hover:bg-[#6b3410] text-white"
+        className="md:hidden fixed top-4 left-4 z-40 bg-[#001E57] hover:bg-[#6b3410] text-white"
         size="icon"
       >
         <Menu className="w-5 h-5" />
@@ -110,8 +110,8 @@ export function Sidebar() {
         className={`
           fixed md:static inset-y-0 left-0 z-50 
           w-80 max-w-[85vw]
-          bg-gradient-to-b from-[#4a3728] to-[#2c1810] 
-          border-r border-[#8b7355] 
+          bg-gradient-to-b from-[#3c0008] to-[#300006] 
+          border-r border-[#caa906] 
           flex flex-col
           transform transition-transform duration-300
           ${isOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0"}

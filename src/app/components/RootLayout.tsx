@@ -8,7 +8,7 @@ export function RootLayout() {
 
   return (
     <BookProvider>
-      <div className="flex h-screen bg-[#2c1810] overflow-hidden">
+      <div className="flex h-screen bg-[#25130c] overflow-hidden">
         <Sidebar />
         <main className="flex-1 overflow-hidden">
           <AnimatePresence mode="wait">

@@ -54,15 +54,15 @@ export function AddBookDialog({ onAddBook }: AddBookDialogProps) {
   return (
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
-        <Button className="gap-2 bg-[#8b4513] hover:bg-[#6b3410] text-white">
+        <Button className="gap-2 bg-[#001E57] hover:bg-[#0a2a5c] text-white">
           <BookPlus className="w-4 h-4" />
           Add New Book
         </Button>
       </DialogTrigger>
-      <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto bg-[#faf8f3]">
+      <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto bg-[#faf8f3] border-2 border-[#caa906]">
         <DialogHeader>
-          <DialogTitle className="text-2xl font-serif text-[#2c1810]">
-            Add a New Book to Your Collection
+          <DialogTitle className="text-2xl font-serif mb-2 text-[#2c1810]">
+            Add New Book to Your Collection
           </DialogTitle>
         </DialogHeader>
         
@@ -175,13 +175,13 @@ export function AddBookDialog({ onAddBook }: AddBookDialogProps) {
               type="button"
               variant="outline"
               onClick={() => setOpen(false)}
-              className="border-[#8b7355] text-[#2c1810]"
+              className="border-[#8b7355] text-[#2c1810] border-1 border-[#caa906]"
             >
               Cancel
             </Button>
             <Button
               type="submit"
-              className="bg-[#8b4513] hover:bg-[#6b3410] text-white"
+              className="bg-[#001E57] hover:bg-[#0a2a5c] text-white border-1 border-[#caa906]"
             >
               Add to Collection
             </Button>
