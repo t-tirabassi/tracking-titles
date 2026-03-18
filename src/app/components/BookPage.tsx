@@ -94,17 +94,17 @@ export function BookPage({ book, pageNumber, onDelete }: BookPageProps) {
       {/* Content sections */}
       <div className="flex-1 overflow-y-auto space-y-4 text-[#2c1810] font-serif">
         <div>
-          <h3 className="text-sm uppercase tracking-wider text-[#8b7355] mb-4">
+          <h3 className="text-lg uppercase tracking-wider text-[#8b7355] mt-4 mb-1">
             Plot
           </h3>
-          <p className="mb-8 leading-relaxed text-sm md:text-base whitespace-pre-line break-words">{book.plot}</p>
+          <p className="mb-17 leading-relaxed text-sm md:text-lg whitespace-pre-line break-words">{book.plot}</p>
         </div>
 
         <div>
-          <h3 className="text-sm uppercase tracking-wider text-[#8b7355] mb-4">
+          <h3 className="text-lg uppercase tracking-wider text-[#8b7355] mt-4 mb-1">
             My Thoughts
           </h3>
-          <p className="mb-8 leading-relaxed text-sm md:text-base italic whitespace-pre-line break-words">{book.thoughts}</p>
+          <p className="mb-8 leading-relaxed text-sm md:text-lg italic whitespace-pre-line break-words">{book.thoughts}</p>
         </div>
       </div>
 
