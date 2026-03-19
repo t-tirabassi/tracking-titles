@@ -8,7 +8,7 @@
 
 5. Add local storing (stores data locally)
 
-6. Change it so clicking through the last page of a chapter brings you to the next chapter (fix it so it flips)
+6. Change it so clicking through the last page of a chapter brings you to the next chapter (fix it so it flips too not just static switch)
 
 7. Implement way to add new genres (should be plus sign next to where it says chapters on sidebar), those added should display above the Other chapter in the sidebar
 
