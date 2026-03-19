@@ -64,10 +64,10 @@ export function BookPage({ book, pageNumber, onDelete }: BookPageProps) {
 
       {/* Book title and author */}
       <div className="mb-5 mt-4">
-        <h1 className="text-2xl md:text-3xl font-serif text-[#2c1810] mb-2">
+        <h1 className="text-2xl md:text-3xl font-serif text-[#2c1810] mb-2 break-words">
           {book.title}
         </h1>
-        <p className="text-base md:text-lg text-[#5c4a3a] italic">by {book.author}</p>
+        <p className="text-base md:text-lg text-[#5c4a3a] italic break-words">by {book.author}</p>
       </div>
 
       {/* Genre badge */}

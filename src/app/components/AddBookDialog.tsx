@@ -17,6 +17,8 @@ export function AddBookDialog({ onAddBook }: AddBookDialogProps) {
   const [rating, setRating] = useState(0);
   const [hoverRating, setHoverRating] = useState(0);
   
+  const TITLE_MAX_LENGTH = 100;
+  const AUTHOR_MAX_LENGTH = 60;
   const PLOT_MAX_LENGTH = 500;
   const THOUGHTS_MAX_LENGTH = 500;
   
@@ -68,11 +70,15 @@ export function AddBookDialog({ onAddBook }: AddBookDialogProps) {
         
         <form onSubmit={handleSubmit} className="space-y-6">
           <div className="space-y-2">
-            <Label htmlFor="title" className="text-[#2c1810]">Book Title *</Label>
+            <Label htmlFor="title" className="text-[#2c1810]">Book Title * ({formData.title.length}/{TITLE_MAX_LENGTH})</Label>
             <Input
               id="title"
               value={formData.title}
-              onChange={(e) => setFormData({ ...formData, title: e.target.value })}
+              onChange={(e) => {
+                if (e.target.value.length <= TITLE_MAX_LENGTH) {
+                  setFormData({ ...formData, title: e.target.value });
+                }
+              }}
               placeholder="Enter book title"
               required
               className="bg-white border-[#c4b5a0]"
@@ -80,11 +86,15 @@ export function AddBookDialog({ onAddBook }: AddBookDialogProps) {
           </div>
 
           <div className="space-y-2">
-            <Label htmlFor="author" className="text-[#2c1810]">Author *</Label>
+            <Label htmlFor="author" className="text-[#2c1810]">Author * ({formData.author.length}/{AUTHOR_MAX_LENGTH})</Label>
             <Input
               id="author"
               value={formData.author}
-              onChange={(e) => setFormData({ ...formData, author: e.target.value })}
+              onChange={(e) => {
+                if (e.target.value.length <= AUTHOR_MAX_LENGTH) {
+                  setFormData({ ...formData, author: e.target.value });
+                }
+              }}
               placeholder="Enter author name"
               required
               className="bg-white border-[#c4b5a0]"
