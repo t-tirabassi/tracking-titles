@@ -1,20 +1,30 @@
-import { useParams } from "react-router";
+import { useParams, useNavigate } from "react-router";
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { useBooks } from "../contexts/BookContext";
 import { BookPage } from "../components/BookPage";
 import { EmptyChapter } from "../components/EmptyChapter";
+import { GENRES } from "../types/book";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "../components/ui/button";
 
 export function ChapterView() {
   const { genre } = useParams<{ genre: string }>();
+  const navigate = useNavigate();
   const { books, removeBook } = useBooks();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [direction, setDirection] = useState(0);
 
   const decodedGenre = genre ? decodeURIComponent(genre) : "";
   const genreBooks = books.filter((book) => book.genre === decodedGenre);
+  const getNextGenre = () => {
+  const currentGenreIndex = GENRES.findIndex(g => g === decodedGenre);
+  // If not found / is last go to first
+  if (currentGenreIndex === -1 || currentGenreIndex === GENRES.length - 1) {
+    return GENRES[0];
+  }
+  return GENRES[currentGenreIndex + 1];
+};
 
   const handleNavigate = (newIndex: number) => {
     setDirection(newIndex > currentIndex ? 1 : -1);
@@ -26,7 +36,8 @@ export function ChapterView() {
     if (canGoNext) {
       handleNavigate(currentIndex + 1);
     } else {
-      handleNavigate(0);
+      const nextGenre = getNextGenre();
+      navigate(`/chapter/${encodeURIComponent(nextGenre)}`)
     }
   };
 
