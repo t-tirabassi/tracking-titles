@@ -61,7 +61,7 @@ export function AddBookDialog({ onAddBook }: AddBookDialogProps) {
           Add New Book
         </Button>
       </DialogTrigger>
-      <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto bg-[#faf8f3] border-2 border-[#caa906]">
+      <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto bg-[#faf8f3] border-2 border-[#caa906] !w-full [word-break:break-word]">
         <DialogHeader>
           <DialogTitle className="text-2xl font-serif mb-2 text-[#2c1810]">
             Add New Book to Your Collection

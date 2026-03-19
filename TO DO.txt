@@ -16,8 +16,10 @@
 
 9. Change it so genre badge colors are differenty, also make it so genre badge color can be chosen when adding new genre
 
-10. Fix Add New Book dialog window so that when typing a lot doesnt trail/scroll off to side opf window wraps down to next line
+1̶0̶.̶ ̶F̶i̶x̶ ̶A̶d̶d̶ ̶N̶e̶w̶ ̶B̶o̶o̶k̶ ̶d̶i̶a̶l̶o̶g̶ ̶w̶i̶n̶d̶o̶w̶ ̶s̶o̶ ̶t̶h̶a̶t̶ ̶w̶h̶e̶n̶ ̶t̶y̶p̶i̶n̶g̶ ̶a̶ ̶l̶o̶t̶ ̶d̶o̶e̶s̶n̶t̶ ̶t̶r̶a̶i̶l̶/̶s̶c̶r̶o̶l̶l̶ ̶o̶f̶f̶ ̶t̶o̶ ̶s̶i̶d̶e̶ ̶o̶f̶ ̶w̶i̶n̶d̶o̶w̶ ̶w̶r̶a̶p̶s̶ ̶d̶o̶w̶n̶ ̶t̶o̶ ̶n̶e̶x̶t̶ ̶l̶i̶n̶e̶
 
 1̶1̶.̶ ̶F̶i̶x̶ ̶i̶t̶ ̶s̶o̶ ̶b̶o̶o̶k̶ ̶t̶i̶t̶l̶e̶ ̶a̶n̶d̶ ̶a̶u̶t̶h̶o̶r̶ ̶c̶a̶n̶'̶t̶ ̶t̶r̶a̶i̶l̶ ̶o̶f̶f̶ ̶s̶c̶r̶e̶e̶n̶ ̶a̶l̶s̶o̶ ̶h̶a̶v̶e̶ ̶c̶h̶a̶r̶a̶c̶t̶e̶r̶ ̶l̶i̶m̶i̶t̶
 
 12. Add chapter divider when flipping through pages (kinda look book you're writing, have page dedicated to stating what genre chapter flipping to)
+
+13. Fix it so that when you hit cancel for adding new book then click add new book again the previous text you isn't still there

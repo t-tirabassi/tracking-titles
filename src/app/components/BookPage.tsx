@@ -43,10 +43,10 @@ export function BookPage({ book, pageNumber, onDelete }: BookPageProps) {
               </Button>
             </AlertDialogTrigger>
 
-            <AlertDialogContent>
+            <AlertDialogContent  className="max-w-sm w-full overflow-x-hidden break-words [word-break:break-word]">
               <AlertDialogHeader>
                 <AlertDialogTitle>Confirm Entry Deletion</AlertDialogTitle>
-                <AlertDialogDescription>
+                <AlertDialogDescription className="break-words [word-break:break-word]">
                   Delete "{book.title}" from the "{book.genre}" chapter?
                 </AlertDialogDescription>
               </AlertDialogHeader>
@@ -63,7 +63,7 @@ export function BookPage({ book, pageNumber, onDelete }: BookPageProps) {
       )}
 
       {/* Book title and author */}
-      <div className="mb-5 mt-4">
+      <div className="mb-5">
         <h1 className="text-2xl md:text-3xl font-serif text-[#2c1810] mb-2 break-words">
           {book.title}
         </h1>
@@ -97,7 +97,7 @@ export function BookPage({ book, pageNumber, onDelete }: BookPageProps) {
           <h3 className="text-lg uppercase tracking-wider text-[#8b7355] mt-4 mb-1">
             Plot
           </h3>
-          <p className="mb-17 leading-relaxed text-sm md:text-lg whitespace-pre-line break-words">{book.plot}</p>
+          <p className="mb-10 leading-relaxed text-sm md:text-lg whitespace-pre-line break-words">{book.plot}</p>
         </div>
 
         <div>
