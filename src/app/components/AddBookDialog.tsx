@@ -53,6 +53,7 @@ export function AddBookDialog({ onAddBook }: AddBookDialogProps) {
     setOpen(false);
   };
 
+  // Reset for cancel
   const resetForm = () => {
     setFormData({
       title: "",
