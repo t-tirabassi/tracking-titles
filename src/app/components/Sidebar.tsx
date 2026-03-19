@@ -72,7 +72,7 @@ export function Sidebar() {
               className={`flex items-center justify-between px-3 md:px-4 py-3 rounded-lg mb-1 transition-colors ${
                 isActive
                   ? "bg-[#001E57] text-[#caa906] border-2 border-[#caa906]"
-                  : "text-[#c4b5a0] hover:bg-[#0a2a5c] hover:text-[#caa906]"
+                  : "text-[#c4b5a0] hover:bg-[#0a2a5c] hover:text-white"
               }`}
             >
               <span className="font-serif text-sm md:text-base">{genre}</span>
