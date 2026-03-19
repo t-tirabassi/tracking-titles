@@ -1,4 +1,4 @@
-1. Add a way to remove a whole chapter
+1. Add a way to remove a whole chapter (should be minus sign to the left of plus sign for adding new chapters)
 
 2. Add a way to edit book details after added
 
@@ -10,7 +10,7 @@
 
 6. Change it so clicking through the last page of a chapter brings you to the next chapter
 
-7. Implement way to add new genres, those added should display above the Other chapter in the sidebar
+7. Implement way to add new genres (should be plus sign next to where it says chapters on sidebar), those added should display above the Other chapter in the sidebar
 
 8. Add way for users to favorite books (bookmarked by clicking toggle lucide-react Bookmark icon), gets copied over to Favorites tab
 
@@ -22,4 +22,4 @@
 
 12. Add chapter divider when flipping through pages (kinda look book you're writing, have page dedicated to stating what genre chapter flipping to)
 
-13. Fix it so that when you hit cancel for adding new book then click add new book again the previous text you isn't still there
+1̶3̶.̶ ̶F̶i̶x̶ ̶i̶t̶ ̶s̶o̶ ̶t̶h̶a̶t̶ ̶w̶h̶e̶n̶ ̶y̶o̶u̶ ̶h̶i̶t̶ ̶c̶a̶n̶c̶e̶l̶ ̶f̶o̶r̶ ̶a̶d̶d̶i̶n̶g̶ ̶n̶e̶w̶ ̶b̶o̶o̶k̶ ̶t̶h̶e̶n̶ ̶c̶l̶i̶c̶k̶ ̶a̶d̶d̶ ̶n̶e̶w̶ ̶b̶o̶o̶k̶ ̶a̶g̶a̶i̶n̶ ̶t̶h̶e̶ ̶p̶r̶e̶v̶i̶o̶u̶s̶ ̶t̶e̶x̶t̶ ̶y̶o̶u̶ ̶i̶s̶n̶'̶t̶ ̶s̶t̶i̶l̶l̶ ̶t̶h̶e̶r̶e̶

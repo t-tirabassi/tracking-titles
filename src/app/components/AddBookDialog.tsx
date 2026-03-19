@@ -53,8 +53,24 @@ export function AddBookDialog({ onAddBook }: AddBookDialogProps) {
     setOpen(false);
   };
 
+  const resetForm = () => {
+    setFormData({
+      title: "",
+      author: "",
+      genre: "",
+      plot: "",
+      thoughts: "",
+    });
+    setRating(0);
+  };
+
   return (
-    <Dialog open={open} onOpenChange={setOpen}>
+    <Dialog open={open} onOpenChange={(isOpen) => {
+      if (!isOpen) {
+        resetForm();
+      }
+      setOpen(isOpen);
+    }}>
       <DialogTrigger asChild>
         <Button className="gap-2 bg-[#001E57] hover:bg-[#0a2a5c] text-white">
           <BookPlus className="w-4 h-4" />
@@ -184,7 +200,7 @@ export function AddBookDialog({ onAddBook }: AddBookDialogProps) {
             <Button
               type="button"
               variant="outline"
-              onClick={() => setOpen(false)}
+              onClick={() => { resetForm(); setOpen(false); }}
               className="border-[#8b7355] text-[#2c1810] border-1 border-[#caa906]"
             >
               Cancel
