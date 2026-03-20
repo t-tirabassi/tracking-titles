@@ -2,7 +2,7 @@ import { Link, useLocation } from "react-router";
 import { GENRES } from "../types/book";
 import { useBooks } from "../contexts/BookContext";
 import { AddBookDialog } from "./AddBookDialog";
-import { BookOpenText, Home, Menu, X } from "lucide-react";
+import { BookOpenText, Home, Menu, X, Plus, Minus } from "lucide-react";
 import { useState } from "react";
 import { Button } from "./ui/button";
 
@@ -55,8 +55,8 @@ export function Sidebar() {
         </Link>
 
         <div className="mt-4 mb-2 px-3 md:px-4">
-          <h3 className="text-xs uppercase tracking-wider text-[#caa906] font-serif">
-            Chapters
+          <h3 className="flex text-xs uppercase tracking-wider text-[#caa906] font-serif">
+            Chapters<Plus className="ml-2 w-4 h-4"/><Minus className="ml-2 w-4 h-4" />
           </h3>
         </div>
 
