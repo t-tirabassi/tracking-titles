@@ -3,6 +3,7 @@ import { Star, BookMinus } from "lucide-react";
 import { Button } from "./ui/button";
 import { AlertDialog, AlertDialogTrigger, AlertDialogContent, AlertDialogHeader, AlertDialogTitle, 
 AlertDialogDescription, AlertDialogFooter, AlertDialogCancel, AlertDialogAction } from "./ui/alert-dialog";
+import { genreColors } from "../types/genreColors";
 
 interface BookPageProps {
   book: Book;
@@ -72,7 +73,12 @@ export function BookPage({ book, pageNumber, onDelete }: BookPageProps) {
 
       {/* Genre badge */}
       <div className="mb-5">
-        <span className="inline-block px-3 py-1 bg-[#8b4513]/10 text-[#8b4513] text-base rounded-full">
+        <span
+          className={`inline-block px-3 py-1 rounded-full text-base
+            ${genreColors[book.genre]?.bg || "bg-gray-200"}
+            ${genreColors[book.genre]?.text || "text-gray-700"}
+          `}
+        >
           {book.genre}
         </span>
       </div>

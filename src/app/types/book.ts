@@ -16,6 +16,7 @@ export const GENRES = [
   "Fantasy",
   "Romance",
   "Science Fiction",
+  "Horror",
   "Biography",
   "History",
   "Other"
