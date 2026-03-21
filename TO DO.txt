@@ -1,6 +1,6 @@
 1. Add a way to remove a whole chapter (should be minus sign to the left of plus sign for adding new chapters)
 
-2. Add a way to edit book details after added
+2̶.̶ ̶A̶d̶d̶ ̶a̶ ̶w̶a̶y̶ ̶t̶o̶ ̶e̶d̶i̶t̶ ̶b̶o̶o̶k̶ ̶d̶e̶t̶a̶i̶l̶s̶ ̶a̶f̶t̶e̶r̶ ̶a̶d̶d̶e̶d̶
 
 3̶.̶ ̶U̶p̶d̶a̶t̶e̶ ̶c̶s̶s̶ ̶o̶f̶ ̶c̶o̶v̶e̶r̶,̶ ̶p̶a̶g̶e̶s̶,̶ ̶e̶t̶c̶.̶ ̶(̶c̶h̶a̶n̶g̶e̶ ̶b̶r̶o̶w̶n̶ ̶a̶s̶n̶d̶ ̶y̶e̶l̶l̶o̶w̶ ̶t̶o̶ ̶a̶ ̶r̶o̶y̶a̶l̶ ̶b̶u̶r̶g̶u̶n̶d̶y̶/̶m̶a̶r̶o̶o̶n̶ ̶a̶n̶d̶ ̶g̶o̶l̶d̶)̶
 
@@ -14,7 +14,7 @@
 
 8. Add way for users to favorite books (bookmarked by clicking toggle lucide-react Bookmark icon), gets copied over to Favorites tab
 
-9. Change it so genre badge colors are differenty, also make it so genre badge color can be chosen when adding new genre
+9. Change it so genre badge colors are different, also make it so genre badge color can be chosen when adding new genre
 
 1̶0̶.̶ ̶F̶i̶x̶ ̶A̶d̶d̶ ̶N̶e̶w̶ ̶B̶o̶o̶k̶ ̶d̶i̶a̶l̶o̶g̶ ̶w̶i̶n̶d̶o̶w̶ ̶s̶o̶ ̶t̶h̶a̶t̶ ̶w̶h̶e̶n̶ ̶t̶y̶p̶i̶n̶g̶ ̶a̶ ̶l̶o̶t̶ ̶d̶o̶e̶s̶n̶t̶ ̶t̶r̶a̶i̶l̶/̶s̶c̶r̶o̶l̶l̶ ̶o̶f̶f̶ ̶t̶o̶ ̶s̶i̶d̶e̶ ̶o̶f̶ ̶w̶i̶n̶d̶o̶w̶ ̶w̶r̶a̶p̶s̶ ̶d̶o̶w̶n̶ ̶t̶o̶ ̶n̶e̶x̶t̶ ̶l̶i̶n̶e̶
 
@@ -25,3 +25,5 @@
 1̶3̶.̶ ̶F̶i̶x̶ ̶i̶t̶ ̶s̶o̶ ̶t̶h̶a̶t̶ ̶w̶h̶e̶n̶ ̶y̶o̶u̶ ̶h̶i̶t̶ ̶c̶a̶n̶c̶e̶l̶ ̶f̶o̶r̶ ̶a̶d̶d̶i̶n̶g̶ ̶n̶e̶w̶ ̶b̶o̶o̶k̶ ̶t̶h̶e̶n̶ ̶c̶l̶i̶c̶k̶ ̶a̶d̶d̶ ̶n̶e̶w̶ ̶b̶o̶o̶k̶ ̶a̶g̶a̶i̶n̶ ̶t̶h̶e̶ ̶p̶r̶e̶v̶i̶o̶u̶s̶ ̶t̶e̶x̶t̶ ̶y̶o̶u̶ ̶i̶s̶n̶'̶t̶ ̶s̶t̶i̶l̶l̶ ̶t̶h̶e̶r̶e̶
 
 14. Change it so last page of last chapter brings you to back BackCover.tsx
+
+15. Fix remove dialog window to match css of other dialog windows

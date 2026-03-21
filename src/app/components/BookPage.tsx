@@ -4,6 +4,8 @@ import { Button } from "./ui/button";
 import { AlertDialog, AlertDialogTrigger, AlertDialogContent, AlertDialogHeader, AlertDialogTitle, 
 AlertDialogDescription, AlertDialogFooter, AlertDialogCancel, AlertDialogAction } from "./ui/alert-dialog";
 import { genreColors } from "../types/genreColors";
+import { EditBookDialog } from "./EditBookDialog";
+import { useBooks } from "../contexts/BookContext";
 
 interface BookPageProps {
   book: Book;
@@ -12,6 +14,7 @@ interface BookPageProps {
 }
 
 export function BookPage({ book, pageNumber, onDelete }: BookPageProps) {
+  const { updateBook } = useBooks();
   return (
     <div
       className="h-full flex flex-col p-6 md:p-8 bg-[#faf8f3]"
@@ -60,9 +63,9 @@ export function BookPage({ book, pageNumber, onDelete }: BookPageProps) {
               </AlertDialogFooter>
             </AlertDialogContent>
           </AlertDialog>
+          <EditBookDialog book={book} onUpdateBook={updateBook} />
         </div>
       )}
-
       {/* Book title and author */}
       <div className="mb-5">
         <h1 className="text-2xl md:text-3xl font-serif text-[#2c1810] mb-2 break-words">

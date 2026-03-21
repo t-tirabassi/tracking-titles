@@ -5,6 +5,7 @@ interface BookContextType {
   books: Book[];
   addBook: (book: Omit<Book, "id" | "dateAdded">) => void;
   removeBook: (bookId: string) => void;
+  updateBook: (updatedBook : Book) => void;
 }
 
 const BookContext = createContext<BookContextType | undefined>(undefined);
@@ -37,8 +38,16 @@ export function BookProvider({ children }: BookProviderProps) {
     setBooks(books.filter(book => book.id !== bookId));
   };
 
+  const updateBook = (updatedBook: Book) => {
+    setBooks(prevBooks =>
+      prevBooks.map(book =>
+        book.id === updatedBook.id ? updatedBook : book
+      )
+    );
+  };
+
   return (
-    <BookContext.Provider value={{ books, addBook, removeBook }}>
+    <BookContext.Provider value={{ books, addBook, removeBook, updateBook }}>
       {children}
     </BookContext.Provider>
   );
