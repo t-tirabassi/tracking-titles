@@ -47,17 +47,17 @@ export function BookPage({ book, pageNumber, onDelete }: BookPageProps) {
               </Button>
             </AlertDialogTrigger>
 
-            <AlertDialogContent  className="max-w-sm w-full overflow-x-hidden break-words [word-break:break-word]">
+            <AlertDialogContent  className="max-w-sm w-full overflow-x-hidden border-2 border-[#caa906] break-words [word-break:break-word]">
               <AlertDialogHeader>
-                <AlertDialogTitle>Confirm Entry Deletion</AlertDialogTitle>
+                <AlertDialogTitle className="font-serif">Confirm Entry Deletion</AlertDialogTitle>
                 <AlertDialogDescription className="break-words [word-break:break-word]">
                   Delete "{book.title}" from the "{book.genre}" chapter?
                 </AlertDialogDescription>
               </AlertDialogHeader>
 
               <AlertDialogFooter>
-                <AlertDialogCancel>Cancel</AlertDialogCancel>
-                <AlertDialogAction onClick={onDelete}>
+                <AlertDialogCancel className="border-1 border-[#caa906]">Cancel</AlertDialogCancel>
+                <AlertDialogAction className="bg-[#dc2626] hover:bg-[#b91c1c] text-white border-1 border-[#caa906]" onClick={onDelete}>
                   Delete
                 </AlertDialogAction>
               </AlertDialogFooter>

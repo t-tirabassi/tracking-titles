@@ -26,4 +26,4 @@
 
 14. Change it so last page of last chapter brings you to back BackCover.tsx
 
-15. Fix remove dialog window to match css of other dialog windows
+1̶5̶.̶ ̶F̶i̶x̶ ̶r̶e̶m̶o̶v̶e̶ ̶d̶i̶a̶l̶o̶g̶ ̶w̶i̶n̶d̶o̶w̶ ̶t̶o̶ ̶m̶a̶t̶c̶h̶ ̶c̶s̶s̶ ̶o̶f̶ ̶o̶t̶h̶e̶r̶ ̶d̶i̶a̶l̶o̶g̶ ̶w̶i̶n̶d̶o̶w̶s̶
