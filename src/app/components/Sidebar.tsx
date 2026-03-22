@@ -2,13 +2,14 @@ import { Link, useLocation } from "react-router";
 import { GENRES } from "../types/book";
 import { useBooks } from "../contexts/BookContext";
 import { AddBookDialog } from "./AddBookDialog";
-import { BookOpenText, Home, Menu, X, Plus, Minus } from "lucide-react";
+import { BookOpenText, Home, Menu, X, Plus, Minus, Bookmark } from "lucide-react";
 import { useState } from "react";
 import { Button } from "./ui/button";
 
 export function Sidebar() {
   const { books, addBook } = useBooks();
   const location = useLocation();
+  const favActive = location.pathname === "/Favorites"
   const [isOpen, setIsOpen] = useState(false);
 
   const getBookCountForGenre = (genre: string) => {
@@ -83,6 +84,24 @@ export function Sidebar() {
           );
         })}
       </nav>
+
+        {/* Favorites Tab */}
+        <div className="mt-4 mb-2 p-3 md:p-4">
+          <Link
+            to="/Favorites"
+            onClick={closeSidebar}
+            className={`flex items-center justify-between px-3 md:px-4 py-3 rounded-lg mb-1 transition-colors ${
+              favActive
+                ? "bg-[#001E57] text-[#caa906] border-2 border-[#caa906]"
+                : "text-[#c4b5a0] hover:bg-[#0a2a5c] hover:text-white"
+            }`}
+            >
+              <span className="font-serif text-sm md:text-base">Favorites</span>
+              <Bookmark className={`w-4 h-4 ${
+                favActive ? "text-white" : "text-[#caa906]"
+              }`} />
+            </Link>
+        </div>
     </>
   );
 
