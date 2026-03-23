@@ -5,7 +5,7 @@ export interface Book {
   genre: string;
   plot: string;
   thoughts: string;
-  rating: number; // 1-5
+  rating: number;
   dateAdded: string;
 }
 

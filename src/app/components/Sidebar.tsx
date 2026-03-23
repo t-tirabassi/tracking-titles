@@ -86,7 +86,7 @@ export function Sidebar() {
       </nav>
 
         {/* Favorites Tab */}
-        <div className="mt-4 mb-2 p-3 md:p-4">
+        <div className="mt-4 mb-2 p-2 md:p-4">
           <Link
             to="/Favorites"
             onClick={closeSidebar}

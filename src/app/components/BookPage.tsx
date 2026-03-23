@@ -1,5 +1,5 @@
 import { Book } from "../types/book";
-import { Star, BookMinus } from "lucide-react";
+import { Star, BookMinus, Bookmark } from "lucide-react";
 import { Button } from "./ui/button";
 import { AlertDialog, AlertDialogTrigger, AlertDialogContent, AlertDialogHeader, AlertDialogTitle, 
 AlertDialogDescription, AlertDialogFooter, AlertDialogCancel, AlertDialogAction } from "./ui/alert-dialog";
@@ -27,14 +27,16 @@ export function BookPage({ book, pageNumber, onDelete }: BookPageProps) {
         )`
       }}
     >
+      
       {/* Page number */}
-      <div className="text-right text-sm text-[#8b7355] mb-4 font-serif">
-        {pageNumber}
+      <div className="flex items-center justify-end text-sm text-[#8b7355] mb-4 font-serif gap-1">
+          <Bookmark className="mr-7 w-8 h-8" />
+        <span>{pageNumber}</span>
       </div>
 
       {/* Delete a book */}
       {onDelete && (
-        <div className="absolute mt-1 top-4 left-4 md:top-6 md:right-6">
+        <div className="absolute mt-1 top-4 left-4 md:top-7 md:right-6">
           <AlertDialog>
             <AlertDialogTrigger asChild>
               <Button

@@ -10,7 +10,7 @@ export function EmptyFavorites() {
       <p className="text-sm md:text-base text-[#8b7355] text-center max-w-md font-serif px-4">
         No books favorited yet.
         <br />
-        Bookmark them to start adding to your favorites!
+        Bookmark an entry to add it to your favorites!
       </p>
     </div>
   );
