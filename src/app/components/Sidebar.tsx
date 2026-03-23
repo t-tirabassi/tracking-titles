@@ -98,7 +98,7 @@ export function Sidebar() {
             >
               <span className="font-serif text-sm md:text-base">Favorites</span>
               <Bookmark className={`w-4 h-4 ${
-                favActive ? "text-white" : "text-[#caa906]"
+                favActive ? "text-[#caa906]" : "text-[#caa906]"
               }`} />
             </Link>
         </div>

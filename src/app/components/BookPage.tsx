@@ -15,6 +15,7 @@ interface BookPageProps {
 
 export function BookPage({ book, pageNumber, onDelete }: BookPageProps) {
   const { updateBook } = useBooks();
+  const { toggleFavorite } = useBooks();
   return (
     <div
       className="h-full flex flex-col p-6 md:p-8 bg-[#faf8f3]"
@@ -30,7 +31,14 @@ export function BookPage({ book, pageNumber, onDelete }: BookPageProps) {
       
       {/* Page number */}
       <div className="flex items-center justify-end text-sm text-[#8b7355] mb-4 font-serif gap-1">
-          <Bookmark className="mr-7 w-8 h-8" />
+        <Bookmark
+          className="mr-7 w-8 h-8 cursor-pointer"
+          style={{
+          color: book.favorite ? "#caa906" : "#8b7355",
+          fill: book.favorite ? "#001E57" : "none",
+        }}
+          onClick={() => toggleFavorite(book.id)}
+        />
         <span>{pageNumber}</span>
       </div>
 
