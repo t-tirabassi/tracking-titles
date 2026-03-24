@@ -12,7 +12,7 @@
 
 7. Implement way to add new genres (should be plus sign next to where it says chapters on sidebar), those added should display above the Other chapter in the sidebar
 
-8. Add way for users to favorite books (bookmarked by clicking toggle lucide-react Bookmark icon), gets copied over to Favorites tab
+8̶.̶ ̶A̶d̶d̶ ̶w̶a̶y̶ ̶f̶o̶r̶ ̶u̶s̶e̶r̶s̶ ̶t̶o̶ ̶f̶a̶v̶o̶r̶i̶t̶e̶ ̶b̶o̶o̶k̶s̶ ̶(̶b̶o̶o̶k̶m̶a̶r̶k̶e̶d̶ ̶b̶y̶ ̶c̶l̶i̶c̶k̶i̶n̶g̶ ̶t̶o̶g̶g̶l̶e̶ ̶l̶u̶c̶i̶d̶e̶-̶r̶e̶a̶c̶t̶ ̶B̶o̶o̶k̶m̶a̶r̶k̶ ̶i̶c̶o̶n̶)̶,̶ ̶g̶e̶t̶s̶ ̶c̶o̶p̶i̶e̶d̶ ̶o̶v̶e̶r̶ ̶t̶o̶ ̶F̶a̶v̶o̶r̶i̶t̶e̶s̶ ̶t̶a̶b̶
 
 9. Change it so genre badge colors are different, also make it so genre badge color can be chosen when adding new genre
 
