@@ -7,7 +7,7 @@ export interface Book {
   thoughts: string;
   rating: number;
   dateAdded: string;
-  favorite?: boolean;
+  favorite: boolean;
 }
 
 export const GENRES = [

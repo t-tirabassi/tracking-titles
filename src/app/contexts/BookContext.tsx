@@ -31,6 +31,7 @@ export function BookProvider({ children }: BookProviderProps) {
       ...bookData,
       id: Date.now().toString(),
       dateAdded: new Date().toISOString(),
+      favorite: false,
     };
     setBooks([...books, newBook]);
   };
