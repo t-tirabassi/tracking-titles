@@ -28,7 +28,7 @@ export function ChapterDivider({ title }: ChapterDividerProps) {
       />
 
       <p className="text-sm md:text-base text-[#8b7355] font-serif max-w-md">
-        This chapter contains all of the {title} books you've read.
+        Here are all of the {title} books you've read.
       </p>
     </div>
   );
