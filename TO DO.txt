@@ -20,7 +20,7 @@
 
 1̶1̶.̶ ̶F̶i̶x̶ ̶i̶t̶ ̶s̶o̶ ̶b̶o̶o̶k̶ ̶t̶i̶t̶l̶e̶ ̶a̶n̶d̶ ̶a̶u̶t̶h̶o̶r̶ ̶c̶a̶n̶'̶t̶ ̶t̶r̶a̶i̶l̶ ̶o̶f̶f̶ ̶s̶c̶r̶e̶e̶n̶ ̶a̶l̶s̶o̶ ̶h̶a̶v̶e̶ ̶c̶h̶a̶r̶a̶c̶t̶e̶r̶ ̶l̶i̶m̶i̶t̶
 
-12. Add chapter divider when flipping through pages (kinda like book you're writing, have page dedicated to stating what genre chapter flipping to)
+1̶2̶.̶ ̶A̶d̶d̶ ̶c̶h̶a̶p̶t̶e̶r̶ ̶d̶i̶v̶i̶d̶e̶r̶ ̶w̶h̶e̶n̶ ̶f̶l̶i̶p̶p̶i̶n̶g̶ ̶t̶h̶r̶o̶u̶g̶h̶ ̶p̶a̶g̶e̶s̶ ̶(̶k̶i̶n̶d̶a̶ ̶l̶i̶k̶e̶ ̶b̶o̶o̶k̶ ̶y̶o̶u̶'̶r̶e̶ ̶w̶r̶i̶t̶i̶n̶g̶,̶ ̶h̶a̶v̶e̶ ̶p̶a̶g̶e̶ ̶d̶e̶d̶i̶c̶a̶t̶e̶d̶ ̶t̶o̶ ̶s̶t̶a̶t̶i̶n̶g̶ ̶w̶h̶a̶t̶ ̶g̶e̶n̶r̶e̶ ̶c̶h̶a̶p̶t̶e̶r̶ ̶f̶l̶i̶p̶p̶i̶n̶g̶ ̶t̶o̶)̶
 
 1̶3̶.̶ ̶F̶i̶x̶ ̶i̶t̶ ̶s̶o̶ ̶t̶h̶a̶t̶ ̶w̶h̶e̶n̶ ̶y̶o̶u̶ ̶h̶i̶t̶ ̶c̶a̶n̶c̶e̶l̶ ̶f̶o̶r̶ ̶a̶d̶d̶i̶n̶g̶ ̶n̶e̶w̶ ̶b̶o̶o̶k̶ ̶t̶h̶e̶n̶ ̶c̶l̶i̶c̶k̶ ̶a̶d̶d̶ ̶n̶e̶w̶ ̶b̶o̶o̶k̶ ̶a̶g̶a̶i̶n̶ ̶t̶h̶e̶ ̶p̶r̶e̶v̶i̶o̶u̶s̶ ̶t̶e̶x̶t̶ ̶y̶o̶u̶ ̶i̶s̶n̶'̶t̶ ̶s̶t̶i̶l̶l̶ ̶t̶h̶e̶r̶e̶
 

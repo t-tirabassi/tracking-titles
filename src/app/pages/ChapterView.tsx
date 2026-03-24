@@ -4,8 +4,26 @@ import { motion, AnimatePresence } from "motion/react";
 import { useBooks } from "../contexts/BookContext";
 import { BookPage } from "../components/BookPage";
 import { EmptyChapter } from "../components/EmptyChapter";
+import { ChapterDivider } from "../components/ChapterDivider";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "../components/ui/button";
+
+// Wrapper to apply different layout per page type
+function PageWrapper({
+  type,
+  children,
+}: {
+  type: "book" | "divider";
+  children: React.ReactNode;
+}) {
+  return type === "book" ? (
+    <div className="w-full h-full">{children}</div>
+  ) : (
+    <div className="flex flex-col items-center justify-center w-full h-full">
+      {children}
+    </div>
+  );
+}
 
 export function ChapterView() {
   const { genre } = useParams<{ genre: string }>();
@@ -21,8 +39,10 @@ export function ChapterView() {
     setCurrentIndex(newIndex);
   };
 
+  const canGoPrevious = currentIndex > 0;
+  const canGoNext = currentIndex < genreBooks.length; // index 0 = divider
+
   const handlePageClick = () => {
-    // Click to go to next page, or loop back to first
     if (canGoNext) {
       handleNavigate(currentIndex + 1);
     } else {
@@ -30,17 +50,10 @@ export function ChapterView() {
     }
   };
 
-  const canGoPrevious = currentIndex > 0;
-  const canGoNext = currentIndex < genreBooks.length - 1;
-
-  // Handles book deletion
   const handleDeleteBook = (bookId: string) => {
     removeBook(bookId);
-    if (currentIndex >= genreBooks.length - 1 && currentIndex > 0) {
+    if (currentIndex >= genreBooks.length && currentIndex > 0) {
       setCurrentIndex(currentIndex - 1);
-    }
-    else if (genreBooks.length == 1) {
-      setCurrentIndex(0);
     }
   };
 
@@ -93,18 +106,23 @@ export function ChapterView() {
                 initial="enter"
                 animate="center"
                 exit="exit"
-                transition={{
-                  duration: 0.5,
-                  ease: "easeInOut",
-                }}
-                className="h-full"
+                transition={{ duration: 0.5, ease: "easeInOut" }}
+                className="h-full w-full"
                 style={{ transformStyle: "preserve-3d" }}
               >
-                <BookPage
-                  book={genreBooks[currentIndex]}
-                  pageNumber={currentIndex + 1}
-                  onDelete={() => handleDeleteBook(genreBooks[currentIndex].id)}
-                />
+                <PageWrapper type={currentIndex === 0 ? "divider" : "book"}>
+                  {currentIndex === 0 ? (
+                    <ChapterDivider chapterNumber={1} title={decodedGenre} />
+                  ) : (
+                    <BookPage
+                      book={genreBooks[currentIndex - 1]}
+                      pageNumber={currentIndex}
+                      onDelete={() =>
+                        handleDeleteBook(genreBooks[currentIndex - 1].id)
+                      }
+                    />
+                  )}
+                </PageWrapper>
               </motion.div>
             </AnimatePresence>
           )}
@@ -128,7 +146,9 @@ export function ChapterView() {
           </Button>
 
           <div className="text-xs md:text-sm text-[#8b7355] font-serif text-center">
-            <div>Page {currentIndex + 1} of {genreBooks.length}</div>
+            <div>
+              Page {currentIndex + 1} of {genreBooks.length + 1}
+            </div>
           </div>
 
           <Button
