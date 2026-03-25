@@ -9,7 +9,7 @@ export function HomeView() {
 
   const handleCoverClick = () => {
     if (books.length > 0) {
-      // Get the first book's genre and navigate to it
+      // Gets the first book's genre and navigate to it
       const firstGenre = books[0].genre;
       navigate(`/chapter/${encodeURIComponent(firstGenre)}`);
     }

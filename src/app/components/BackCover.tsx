@@ -1,6 +1,6 @@
 import { BookOpenText } from "lucide-react";
 
-export function BookCover() {
+export function BackCover() {
   return (
     <div className="h-full flex flex-col items-center justify-center bg-gradient-to-br from-[#3c0008] to-[#300006] text-white p-6 md:p-8 relative overflow-hidden">
       {/* Decorative corner elements */}
