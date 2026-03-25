@@ -52,14 +52,18 @@ export function EditBookDialog({ book, onUpdateBook }: EditBookDialogProps) {
         <Button
           variant="ghost"
           size="sm"
+          onClick={(e) => e.stopPropagation()}
           className="text-[#8b4513] hover:text-yellow-600 hover:bg-yellow-50"
         >
-          <Pencil className="w-4 h-4" />
+          <Pencil className="w-4 h-4 z-[9999]" />
 
         </Button>
       </DialogTrigger>
 
-      <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto bg-[#faf8f3] border-2 border-[#caa906]">
+      <DialogContent 
+        onClick={(e) => e.stopPropagation()}
+        className="max-w-2xl max-h-[90vh] overflow-y-auto bg-[#faf8f3] border-2 border-[#caa906] z-[9999]"
+        >
         <DialogHeader>
           <DialogTitle className="text-2xl font-serif mb-2 text-[#2c1810]">
             Edit Book Details

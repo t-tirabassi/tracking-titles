@@ -27,3 +27,5 @@
 14. Change it so last page of last chapter brings you to back BackCover.tsx
 
 1̶5̶.̶ ̶F̶i̶x̶ ̶r̶e̶m̶o̶v̶e̶ ̶d̶i̶a̶l̶o̶g̶ ̶w̶i̶n̶d̶o̶w̶ ̶t̶o̶ ̶m̶a̶t̶c̶h̶ ̶c̶s̶s̶ ̶o̶f̶ ̶o̶t̶h̶e̶r̶ ̶d̶i̶a̶l̶o̶g̶ ̶w̶i̶n̶d̶o̶w̶s̶
+
+1̶6̶.̶ ̶F̶i̶x̶ ̶h̶o̶w̶ ̶w̶h̶e̶n̶ ̶c̶l̶i̶c̶k̶ ̶d̶e̶l̶e̶t̶e̶ ̶o̶r̶ ̶e̶d̶i̶t̶ ̶b̶u̶t̶t̶o̶n̶s̶ ̶a̶s̶ ̶w̶e̶l̶l̶ ̶a̶s̶ ̶t̶h̶e̶i̶r̶ ̶d̶i̶a̶l̶o̶g̶ ̶p̶a̶g̶e̶ ̶f̶l̶i̶p̶s̶,̶ ̶s̶h̶o̶u̶l̶d̶n̶'̶t̶ ̶f̶l̶i̶p̶

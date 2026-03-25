@@ -60,11 +60,14 @@ export function BookPage({ book, pageNumber, onDelete }: BookPageProps) {
                 onClick={(e) => e.stopPropagation()}
                 className="text-[#8b4513] hover:text-red-600 hover:bg-red-50"
               >
-                <BookMinus className="w-4 h-4" />
+                <BookMinus className="w-4 h-4 z-[9999]" />
               </Button>
             </AlertDialogTrigger>
 
-            <AlertDialogContent  className="max-w-sm w-full overflow-x-hidden border-2 border-[#caa906] break-words [word-break:break-word]">
+            <AlertDialogContent 
+              onClick={(e) => e.stopPropagation()}
+              className="max-w-sm w-full overflow-x-hidden border-2 border-[#caa906] break-words [word-break:break-word]"
+              >
               <AlertDialogHeader>
                 <AlertDialogTitle className="font-serif">Confirm Entry Deletion</AlertDialogTitle>
                 <AlertDialogDescription className="break-words [word-break:break-word]">
