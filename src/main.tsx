@@ -4,11 +4,14 @@ import { RouterProvider } from 'react-router';
 import { router } from './app/routes';
 import { BookProvider } from './app/contexts/BookContext';
 import './styles/index.css';
+import { GenreProvider } from './app/contexts/GenreContext';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BookProvider>
-      <RouterProvider router={router} />
-    </BookProvider>
+    <GenreProvider>
+      <BookProvider>
+        <RouterProvider router={router} />
+      </BookProvider>
+    </GenreProvider>
   </StrictMode>
 );
