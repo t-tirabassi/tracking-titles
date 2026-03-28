@@ -7,6 +7,7 @@ import { Label } from "./ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "./ui/select";
 import { Star, Pencil } from "lucide-react";
 import { Book, GENRES } from "../types/book";
+import { useGenres } from "../contexts/GenreContext";
 
 interface EditBookDialogProps {
   book: Book;
@@ -15,6 +16,9 @@ interface EditBookDialogProps {
 
 export function EditBookDialog({ book, onUpdateBook }: EditBookDialogProps) {
   const [open, setOpen] = useState(false);
+
+  // Used for new dynamic genres
+  const { customGenres } = useGenres(); 
 
   const TITLE_MAX_LENGTH = 100;
   const AUTHOR_MAX_LENGTH = 60;
@@ -31,6 +35,12 @@ export function EditBookDialog({ book, onUpdateBook }: EditBookDialogProps) {
 
   const [rating, setRating] = useState(book.rating);
   const [hoverRating, setHoverRating] = useState(0);
+
+  const genreOptions = [
+    ...GENRES.filter((g) => g !== "Other"),
+    ...customGenres.map((g: { name: string }) => g.name),
+    "Other",
+  ];
 
   const handleSave = (e: React.FormEvent) => {
     e.preventDefault();
@@ -107,8 +117,8 @@ export function EditBookDialog({ book, onUpdateBook }: EditBookDialogProps) {
               <SelectTrigger>
                 <SelectValue />
               </SelectTrigger>
-              <SelectContent>
-                {GENRES.map((g) => (
+              <SelectContent className="z-[99999]">
+                {genreOptions.map((g) => (
                   <SelectItem key={g} value={g}>
                     {g}
                   </SelectItem>

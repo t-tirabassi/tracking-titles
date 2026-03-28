@@ -8,16 +8,15 @@
 }
 
 .sidebar-scroll::-webkit-scrollbar-thumb {
-  background-color: #001E57; /* gold thumb */
-  border-color: #caa906;
-  border-radius: 4px;        /* rounded ends */
+  background-color: #001E57;
+  border: 1px solid #300006;
+  border-radius: 4px;
 }
 
 .sidebar-scroll::-webkit-scrollbar-track {
-  background-color: #300006; /* dark track */
+  background-color: #300006;
 }
 
-/* Optional: hover effect */
 .sidebar-scroll::-webkit-scrollbar-thumb:hover {
-  background-color: #0a2a5c; /* brighter gold on hover */
+  background-color: #0a2a5c;
 }

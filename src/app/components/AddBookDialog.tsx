@@ -36,7 +36,7 @@ export function AddBookDialog({ onAddBook }: AddBookDialogProps) {
     e.preventDefault();
     if (!formData.title || !formData.author || !formData.genre || rating === 0) return;
 
-    onAddBook({ ...formData, rating });
+    onAddBook({ ...formData, rating, favorite: false });
 
     setFormData({ title: "", author: "", genre: "", plot: "", thoughts: "" });
     setRating(0);
