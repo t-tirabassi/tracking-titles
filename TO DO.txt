@@ -32,6 +32,6 @@
 
 1̶7̶.̶ ̶F̶i̶x̶ ̶e̶d̶i̶t̶ ̶b̶o̶o̶k̶ ̶b̶e̶c̶a̶u̶s̶e̶ ̶n̶o̶w̶ ̶h̶a̶v̶e̶ ̶i̶s̶s̶u̶e̶s̶ ̶s̶i̶n̶c̶e̶ ̶i̶m̶p̶l̶e̶m̶e̶n̶t̶i̶n̶g̶ ̶a̶d̶d̶i̶n̶g̶ ̶n̶e̶w̶ ̶g̶e̶n̶r̶e̶s̶ ̶(̶a̶l̶s̶o̶ ̶c̶h̶e̶c̶k̶ ̶m̶a̶k̶e̶ ̶s̶u̶r̶e̶ ̶o̶t̶h̶e̶r̶ ̶f̶u̶n̶c̶t̶i̶o̶n̶a̶l̶i̶t̶i̶e̶s̶ ̶a̶l̶l̶ ̶w̶o̶r̶k̶i̶n̶g̶)̶
 
-18. Update css of chapterdivider symbols for newly added genres (has me3ssed up existing genres as well) and css of newly added genre badge on BookPage.tsx
+18. Update css of chapterdivider symbols for newly added genres (has me3ssed up existing genres as well) and css of newly added genre badge on BookPage.tsx (prob dynamic maybe?)
 
 1̶9̶.̶ ̶U̶p̶d̶a̶t̶e̶ ̶c̶s̶s̶ ̶o̶f̶ ̶s̶i̶d̶e̶b̶a̶r̶ ̶o̶v̶e̶r̶f̶l̶o̶w̶ ̶s̶c̶r̶o̶l̶l̶b̶a̶r̶ ̶i̶n̶ ̶i̶n̶d̶e̶x̶.̶c̶s̶s̶
