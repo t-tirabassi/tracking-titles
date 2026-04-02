@@ -4,7 +4,7 @@ import { genreColors as staticColors } from "../types/genreColors"; // static on
 
 interface ChapterDividerProps {
   chapterNumber?: number;
-  title: string; // title === genre
+  title: string;
 }
 
 export function ChapterDivider({ title }: ChapterDividerProps) {
@@ -16,14 +16,17 @@ export function ChapterDivider({ title }: ChapterDividerProps) {
   const bgClass = genreColor.bg;
   const hex = bgClass?.match(/\[(.*?)\]/)?.[1] || "c4b5a0";
 
+  const textClass = genreColor.text;
+  const textHex = textClass?.match(/\[(.*?)\]/)?.[1] || "#666666";
+
   return (
     <div className="flex flex-col items-center justify-center w-full h-full px-4 text-center">
       <h1 className="text-3xl md:text-5xl font-serif mb-3 md:mb-4 text-center text-[#2c1810] uppercase">
-        <span className="mx-5" style={{ color: genreColor.text.replace("text-", "") }}>
+        <span className="mx-5" style={{ color: textHex }}>
           ⚜
         </span>
         {title}
-        <span className="mx-5" style={{ color: genreColor.text.replace("text-", "") }}>
+        <span className="mx-5" style={{ color: textHex }}>
           ⚜
         </span>
       </h1>
